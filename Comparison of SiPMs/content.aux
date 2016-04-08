@@ -1,115 +1,120 @@
 \relax 
-\citation{Silicon Photomultiplier's Gain Stabilization,Temperature and Bias Voltage Dependence,Characterization of SiPM: temperature dependencies,Characterisation of a silicon photomultiplier device}
+\citation{SiPM based photon counting detector for scanning digital radiography}
 \@writefile{toc}{\contentsline {section}{\numberline {1.\hskip .5em\relax }Abstract}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.\hskip .5em\relax }Introduction}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.\hskip .5em\relax }Measure of breakdown voltage}{1}}
+\citation{Silicon Photomultiplier's Gain Stabilization,Temperature and Bias Voltage Dependence,Characterization of SiPM: temperature dependencies,Characterisation of a silicon photomultiplier device}
+\@writefile{toc}{\contentsline {section}{\numberline {3.\hskip .5em\relax }Measure of breakdown voltage}{2}}
 \newlabel{eq:G(V, T)}{{1}{2}}
 \newlabel{eq:V_bd(T)}{{2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.}{\ignorespaces Схема измерения напряжения пробоя SiPM. Свет из LED Driver регистрируется SiPM, усиливается и оцифровывается DT5720a. Температурная стабилизация обеспечивается ПИД-регулятором. Отклонение температуры от установленной не превышает 1К.}}{2}}
-\newlabel{image:install_V_bd}{{1}{2}}
 \citation{Characterisation Studies of Silicon Photomultipliers}
-\@writefile{toc}{\contentsline {section}{\numberline {4.\hskip .5em\relax }Algorithm of finding cross-talk and after-pulsing probabilities}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.\hskip .5em\relax }Theory}{3}}
-\newlabel{eq:G(V, T)}{{3}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.}{\ignorespaces Схема измерения напряжения пробоя SiPM. Свет из LED Driver регистрируется SiPM, усиливается и оцифровывается DT5720a. Температурная стабилизация обеспечивается ПИД-регулятором. Отклонение температуры от установленной не превышает 1К.}}{3}}
+\newlabel{image:install_V_bd}{{1}{3}}
 \citation{Modeling crosstalk in silicon photomultipliers}
 \citation{Characterization and Simulation of the Response,After-pulsingandcross-talkinmulti-pixelphotoncounters,Using MPPCs for T2K Fine Grain Detector}
 \citation{Characterisation Studies of Silicon Photomultipliers}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.}{\ignorespaces Спектр SiPM KETEK PM3325NP-SB0 Pin при напряжении 23.4 В и температуре 265 К при облучении светодиодом. Штриховыми линиями показано положение пиков. Время интегрирования 1 мкс.}}{4}}
+\newlabel{image:sipm_spectrum}{{2}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.\hskip .5em\relax }Algorithm of finding cross-talk and after-pulsing probabilities}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.\hskip .5em\relax }Theory}{4}}
+\newlabel{eq:G(V, T)}{{3}{4}}
 \citation{After-pulsingandcross-talkinmulti-pixelphotoncounters,Using MPPCs for T2K Fine Grain Detector,Characterization and Simulation of the Response}
-\newlabel{eq:V_current}{{4}{4}}
-\newlabel{eq:f(dt)_afterpulsing}{{5}{4}}
+\newlabel{eq:V_current}{{4}{5}}
+\newlabel{eq:f(dt)_afterpulsing}{{5}{5}}
 \citation{Using MPPCs for T2K Fine Grain Detector}
-\newlabel{eq:probability_dt_simple}{{6}{5}}
-\newlabel{eq:probability_dt_simple_parts}{{7}{5}}
-\newlabel{eq:probability_dt_fast}{{8}{5}}
-\newlabel{eq:dt_probability_fast_slow}{{9}{5}}
 \citation{After-pulsingandcross-talkinmulti-pixelphotoncounters}
 \citation{Modeling crosstalk and afterpulsing in siliconphoto multipliers}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.\hskip .5em\relax }Signal finder}{6}}
-\newlabel{eq:parsing}{{10}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.}{\ignorespaces Форма одноэлектронных сигналов с различных SiPM. Рассмотрены лишь сигналы без примеси послеимпульсов.}}{7}}
-\newlabel{image:signal_form_comparison}{{2}{7}}
-\newlabel{eq:V(t)_base}{{11}{7}}
-\newlabel{eq:V(t)_conv}{{12}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.}{\ignorespaces Зависимость числа найденных сигналов от порога по амплитуде и мертвого времени $\tau _{amp}^{dead}$ для Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{9}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1OV_amp_th}{{3}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.}{\ignorespaces Зависимость числа найденных сигналов от порога по производной и мертвого времени $\tau _{amp}^{dead}$ для Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К. Отобраны лишь сигналы, превышающие порог $th_{amp}^{stop} = 0.002$}}{9}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1OV_der_th}{{4}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.\hskip .5em\relax }Correlation analysis}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.}{\ignorespaces Корреляция амплитуда - $\chi ^2 / Dof$ при аппроксимации всех найденных сигналов однокомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{10}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1V_Chi2_amp 1}{{5}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.}{\ignorespaces Корреляция амплитуда - $\chi ^2 / Dof$ при аппроксимации множества $Z_{1}$ (см. рис.~\ref  {image:Hamamatsu_S10362-11-100C_295K_1V_Chi2_amp 1}) двухкомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{10}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2}{{6}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.}{\ignorespaces Корреляция расстояния между сигналами и суммарной амплитудой при аппроксимации множества $A_{2}$ (см. рис.~\ref  {image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2}) двухкомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{11}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_amp1_amp2_dt_A2}{{7}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.}{\ignorespaces Корреляция расстояния между сигналами и суммарной амплитудой при аппроксимации множества $B_{2}$ (см. рис.~\ref  {image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2}) двухкомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{11}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_amp1_amp2_dt_B2}{{8}{11}}
+\newlabel{eq:probability_dt_simple}{{6}{6}}
+\newlabel{eq:probability_dt_simple_parts}{{7}{6}}
+\newlabel{eq:probability_dt_fast}{{8}{6}}
+\newlabel{eq:dt_probability_fast_slow}{{9}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.\hskip .5em\relax }Signal finder}{7}}
+\newlabel{eq:parsing}{{10}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.}{\ignorespaces Форма одноэлектронных сигналов с различных SiPM. Рассмотрены лишь сигналы без примеси послеимпульсов.}}{7}}
+\newlabel{image:signal_form_comparison}{{3}{7}}
+\newlabel{eq:V(t)_base}{{11}{8}}
+\newlabel{eq:V(t)_conv}{{12}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.}{\ignorespaces Зависимость числа найденных сигналов от порога по амплитуде и мертвого времени $\tau _{amp}^{dead}$ для Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{9}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1OV_amp_th}{{4}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.}{\ignorespaces Зависимость числа найденных сигналов от порога по производной и мертвого времени $\tau _{amp}^{dead}$ для Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К. Отобраны лишь сигналы, превышающие порог $th_{amp}^{stop} = 0.002$}}{9}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1OV_der_th}{{5}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.\hskip .5em\relax }Correlation analysis}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.}{\ignorespaces Корреляция амплитуда - $\chi ^2 / Dof$ при аппроксимации всех найденных сигналов однокомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{11}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1V_Chi2_amp 1}{{6}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.}{\ignorespaces Корреляция амплитуда - $\chi ^2 / Dof$ при аппроксимации множества $Z_{1}$ (см. рис.~\ref  {image:Hamamatsu_S10362-11-100C_295K_1V_Chi2_amp 1}) двухкомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{11}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2}{{7}{11}}
 \citation{Characterization of SiPM: temperature dependencies}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.}{\ignorespaces Спектр временных интервалов, аппроксимированный функцией (\ref  {eq:dt_probability_fast_slow}). События с кросстоком не учитываются. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{12}}
-\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_dt_spectrum}{{9}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса от временного порога. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{12}}
-\newlabel{image:Hamamatsu_S10362-11-100C 295K_1_OV_dt_spectrum_timecut}{{10}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.}{\ignorespaces Корреляция расстояния между сигналами и суммарной амплитудой при аппроксимации множества $A_{2}$ (см. рис.~\ref  {image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2}) двухкомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{12}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_amp1_amp2_dt_A2}{{8}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.}{\ignorespaces Корреляция расстояния между сигналами и суммарной амплитудой при аппроксимации множества $B_{2}$ (см. рис.~\ref  {image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2}) двухкомпонентной функцией. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{12}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_amp1_amp2_dt_B2}{{9}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10.}{\ignorespaces Спектр временных интервалов, аппроксимированный функцией (\ref  {eq:dt_probability_fast_slow}). События с кросстоком не учитываются. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{13}}
+\newlabel{image:Hamamatsu_S10362-11-100C_295K_1_OV_dt_spectrum}{{10}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса от временного порога. Сигнал получен с Hamamatsu S10362-11-100C при перенапряжении 1В и температуре 295К.}}{13}}
+\newlabel{image:Hamamatsu_S10362-11-100C 295K_1_OV_dt_spectrum_timecut}{{11}{13}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.\hskip .5em\relax }Results}{13}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.\hskip .5em\relax }Dark noise}{13}}
 \newlabel{eq:Hz_vs_temperature}{{13}{13}}
 \newlabel{eq:Hz_vs_overvoltage}{{14}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11.}{\ignorespaces Зависимость частоты темнового тока от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы функцией (\ref  {eq:Hz_vs_temperature}).}}{13}}
-\newlabel{image:Hamamatsu_S10362-11-100C_dc_vs_T}{{11}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12.}{\ignorespaces Зависимость частоты темнового тока от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией (\ref  {eq:Hz_vs_overvoltage}).}}{13}}
-\newlabel{image:Hamamatsu_S10362-11-100C_dc_vs_V}{{12}{13}}
 \citation{Measurement of PDE of MPPC with different wavelengths of light}
-\@writefile{lof}{\contentsline {figure}{\numberline {13.}{\ignorespaces Зависимость частоты темнового тока от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS. Линии - аппроксимация частоты константой для разных температур.}}{14}}
-\newlabel{image:Hamamatsu_S13360-3050CS_dc_vs_V_rus}{{13}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14.}{\ignorespaces Зависимость частоты темнового тока от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0. Линия - аппроксимация частоты линейной функцией.}}{14}}
-\newlabel{image:KETEK_PM1125NS_SB0_dc_vs_V_rus}{{14}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12.}{\ignorespaces Зависимость частоты темнового тока от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы функцией (\ref  {eq:Hz_vs_temperature}).}}{14}}
+\newlabel{image:Hamamatsu_S10362-11-100C_dc_vs_T}{{12}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13.}{\ignorespaces Зависимость частоты темнового тока от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией (\ref  {eq:Hz_vs_overvoltage}).}}{14}}
+\newlabel{image:Hamamatsu_S10362-11-100C_dc_vs_V}{{13}{14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2.\hskip .5em\relax }Cross-talk}{14}}
 \newlabel{eq:xtalk_general}{{15}{14}}
 \citation{Modeling crosstalk in silicon photomultipliers}
+\@writefile{lof}{\contentsline {figure}{\numberline {14.}{\ignorespaces Зависимость частоты темнового тока от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS. Линии - аппроксимация частоты константой для разных температур.}}{15}}
+\newlabel{image:Hamamatsu_S13360-3050CS_dc_vs_V_rus}{{14}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15.}{\ignorespaces Зависимость частоты темнового тока от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0. Линия - аппроксимация частоты линейной функцией.}}{15}}
+\newlabel{image:KETEK_PM1125NS_SB0_dc_vs_V_rus}{{15}{15}}
 \newlabel{eq:xtalk_prob_V2_reason}{{16}{15}}
 \newlabel{eq:xtalk_vs_T_V}{{17}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15.}{\ignorespaces Зависимость вероятности кросстока от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{15}}
-\newlabel{image:Hamamatsu_S10362-11-100C_xtalk_vs_T}{{15}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16.}{\ignorespaces Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{15}}
-\newlabel{image:Hamamatsu_S10362-11-100C_xtalk_vs_V}{{16}{15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.\hskip .5em\relax }Проверка модели 4-х соседей}{15}}
-\newlabel{eq:p vs xtalk}{{18}{15}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17.}{\ignorespaces Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS.}}{16}}
-\newlabel{image:Hamamatsu_S13360-3050CS_xtalk_vs_V_rus}{{17}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18.}{\ignorespaces Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0.}}{16}}
-\newlabel{image:KETEK_PM1125NS_SB0_x-tlak_vs_V_rus}{{18}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16.}{\ignorespaces Зависимость вероятности кросстока от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{16}}
+\newlabel{image:Hamamatsu_S10362-11-100C_xtalk_vs_T}{{16}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17.}{\ignorespaces Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы квадратичной функцией.}}{16}}
+\newlabel{image:Hamamatsu_S10362-11-100C_xtalk_vs_V}{{17}{16}}
+\newlabel{eq:p vs xtalk}{{18}{16}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.\hskip .5em\relax }Послеимпульсы}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19.}{\ignorespaces Зависимость отношения экспериментальной вероятности срабатывания дополнительной ячейки из-за кросстока к теоретической вероятности от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C.}}{17}}
-\newlabel{image:Hamamatsu_S10362-11-100C_xtalk_ratio_vs_V}{{19}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20.}{\ignorespaces Зависимость отношения экспериментальной вероятности срабатывания дополнительной ячейки из-за кросстока к теоретической вероятности от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS.}}{17}}
-\newlabel{image:Hamamatsu_S13360-3050CS_xtalk_ratio_vs_V}{{20}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21.}{\ignorespaces Зависимость отношения экспериментальной вероятности срабатывания дополнительной ячейки из-за кросстока к теоретической вероятности от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0.}}{17}}
-\newlabel{image:KETEK_PM1125NS_SB0_xtalk_ratio_vs_V_rus}{{21}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{18}}
-\newlabel{image:Hamamatsu_S10362-11-100C_p_f_vs_T}{{22}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{18}}
-\newlabel{image:Hamamatsu_S10362-11-100C_p_f_vs_V}{{23}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24.}{\ignorespaces Зависимость вероятности медленной компоненты послеимпульса $p_{s}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{18}}
-\newlabel{image:Hamamatsu_S10362-11-100C_p_s_vs_T}{{24}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25.}{\ignorespaces Зависимость вероятности медленной компоненты послеимпульса $p_{s}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{18}}
-\newlabel{image:Hamamatsu_S10362-11-100C_p_f_vs_V}{{25}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {26.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{19}}
-\newlabel{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}{{26}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{19}}
-\newlabel{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}{{27}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {28.}{\ignorespaces Зависимость времени медленной компоненты послеимпульса $\tau _{s}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{19}}
-\newlabel{image:Hamamatsu_S10362-11-100C_tau_s_vs_T}{{28}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {29.}{\ignorespaces Зависимость времени медленной компоненты послеимпульса $\tau _{s}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{19}}
-\newlabel{image:Hamamatsu_S10362-11-100C_tau_s_vs_V}{{29}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {30.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS. Данные аппроксимированы квадратичной функцией.}}{20}}
-\newlabel{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}{{30}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {31.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS. Данные аппроксимированы константой.}}{20}}
-\newlabel{image:Hamamatsu_S13360-3050CS_tau_s_vs_V}{{31}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {32.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0. Данные аппроксимированы квадратичной функцией.}}{20}}
-\newlabel{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus}{{32}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {33.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0. Данные аппроксимированы константой.}}{20}}
-\newlabel{image:KETEK_PM1125NS_SB0_tau_f_vs_V_rus}{{33}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18.}{\ignorespaces Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS.}}{17}}
+\newlabel{image:Hamamatsu_S13360-3050CS_xtalk_vs_V_rus}{{18}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19.}{\ignorespaces Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0.}}{17}}
+\newlabel{image:KETEK_PM1125NS_SB0_x-tlak_vs_V_rus}{{19}{17}}
+\newlabel{eq:p_f_s_vs_T_V}{{19}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.\hskip .5em\relax }Conclusions}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20.}{\ignorespaces Зависимость отношения экспериментальной вероятности срабатывания дополнительной ячейки из-за кросстока к теоретической вероятности от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C.}}{18}}
+\newlabel{image:Hamamatsu_S10362-11-100C_xtalk_ratio_vs_V}{{20}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21.}{\ignorespaces Зависимость отношения экспериментальной вероятности срабатывания дополнительной ячейки из-за кросстока к теоретической вероятности от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS.}}{18}}
+\newlabel{image:Hamamatsu_S13360-3050CS_xtalk_ratio_vs_V}{{21}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22.}{\ignorespaces Зависимость отношения экспериментальной вероятности срабатывания дополнительной ячейки из-за кросстока к теоретической вероятности от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0.}}{19}}
+\newlabel{image:KETEK_PM1125NS_SB0_xtalk_ratio_vs_V_rus}{{22}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{19}}
+\newlabel{image:Hamamatsu_S10362-11-100C_p_f_vs_T}{{23}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы квадратичной функцией.}}{19}}
+\newlabel{image:Hamamatsu_S10362-11-100C_p_f_vs_V}{{24}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25.}{\ignorespaces Зависимость вероятности медленной компоненты послеимпульса $p_{s}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{20}}
+\newlabel{image:Hamamatsu_S10362-11-100C_p_s_vs_T}{{25}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26.}{\ignorespaces Зависимость вероятности медленной компоненты послеимпульса $p_{s}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы квадратичной функцией.}}{20}}
+\newlabel{image:Hamamatsu_S10362-11-100C_p_f_vs_V}{{26}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы линейной функцией.}}{20}}
+\newlabel{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}{{27}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{20}}
+\newlabel{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}{{28}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29.}{\ignorespaces Зависимость времени медленной компоненты послеимпульса $\tau _{s}$ от температуры при фиксированном перенапряжении для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{21}}
+\newlabel{image:Hamamatsu_S10362-11-100C_tau_s_vs_T}{{29}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30.}{\ignorespaces Зависимость времени медленной компоненты послеимпульса $\tau _{s}$ от перенапряжения при фиксированной температуре для Hamamatsu S10362-11-100C. Данные аппроксимированы константой.}}{21}}
+\newlabel{image:Hamamatsu_S10362-11-100C_tau_s_vs_V}{{30}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS. Данные аппроксимированы квадратичной функцией.}}{21}}
+\newlabel{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}{{31}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от перенапряжения при фиксированной температуре для Hamamatsu S13360-3050CS. Данные аппроксимированы константой.}}{21}}
+\newlabel{image:Hamamatsu_S13360-3050CS_tau_s_vs_V}{{32}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33.}{\ignorespaces Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0. Данные аппроксимированы квадратичной функцией.}}{22}}
+\newlabel{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus}{{33}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34.}{\ignorespaces Зависимость времени быстрой компоненты послеимпульса $\tau _{f}$ от перенапряжения при фиксированной температуре для KETEK PM1125NS-SB0. Данные аппроксимированы константой.}}{22}}
+\newlabel{image:KETEK_PM1125NS_SB0_tau_f_vs_V_rus}{{34}{22}}
 \@setckpt{content}{
-\setcounter{page}{21}
-\setcounter{equation}{18}
+\setcounter{page}{23}
+\setcounter{equation}{19}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -117,12 +122,12 @@
 \setcounter{footnote}{0}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
-\setcounter{section}{5}
-\setcounter{subsection}{4}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{33}
+\setcounter{figure}{34}
 \setcounter{table}{0}
 \setcounter{rlistctr}{0}
 \setcounter{parentequation}{0}
