@@ -458,11 +458,11 @@ Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \hfill
 \includegraphics[width=0.47\textwidth]{KETEK_PM1125NS_SB0_x-tlak_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the cross-talk probability on the overvoltage at fixed temperature for 
 Hamamatsu S13360-3050CS. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S13360-3050CS_xtalk_vs_V_rus}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности кросстока от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the cross-talk probability on the overvoltage at fixed temperature for 
 KETEK PM1125NS-SB0. The data were approximated by a quadratic function.}
 \label{image:KETEK_PM1125NS_SB0_x-tlak_vs_V_rus}}
 \end{figure}
@@ -479,16 +479,16 @@ In this case, the cross-talk probability in the next cell $p$ is related to the 
 
 Full cross-talk probability was calculated by the Eq.(\ref{eq:xtalk_general}).
 Then $p$ value was calculated by Eq.(\ref{eq:p vs xtalk}).
-It was calculated theoretical probability that due to cross-talk only one cell triggered \cite{Modeling crosstalk in silicon photomultipliers}: $p_{2 phe}^{theory} = 4 \cdot p \cdot q^6$.
-On the other hand it was calculated the experimental probability $p_{2 phe}^{exp}$ as the ratio of the number of  $ N_ {2pe} $ to the total number of events
+It was calculated theoretical probability that due to cross-talk only one cell triggered \cite{Modeling crosstalk in silicon photomultipliers}: $p_{2 phe}^{theory} = 4 \cdot p \cdot (1 - p)^6$.
+On the other hand it was calculated the experimental probability $p_{2 phe}^{exp}$ as the ratio of events number $N_{2 p.e.}$ to the total number of events, 
+where $N_{2 p.e.} \approx  N_{B_{1}} / (N_{A_{1}} + N_{B_{1}} + N_{C_{1}})$.
+As a result of measurements, it was found that the ratio $p_{2 phe}^{exp} / p_{2 phe}^{theory}$ for Hamamatsu S10362-11-100C varies from 1 to 1.08 depending on temperature and overvoltage, and for Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 this ratio varies from 0.98 to 1.02.
+Thus it can be concluded that the model of four nearest neighbors works well for considered SiPMs.
 
-С другой стороны, аналогичную вероятность $p_{2 p.e.}^{exp}$ можно вычислить как отношение числа событий $N_{2 p.e.}$ к полному числу событий.
-В результате измерений было обнаружено, что отношение $p_{2 p.e.}^{exp} / p_{2 p.e.}^{theory}$ для Hamamatsu S10362-11-100C изменяется в зависимости от температуры и перенапряжения в интервале от 1 до 1.08, а для Hamamatsu S13360-3050CS и KETEK PM1125NS-SB0 данное отношение лежит в интервале от 0.98 до 1.02.
-Таким образом можно сделать вывод, что модель 4-х соседей работает хорошо для всех рассмотренных типов SiPM.
+\subsection{After-pulses}
 
-\subsection{Послеимпульсы}
-В результате аппроксимации спектра временных интервалов мы находим также вероятности и времена послеимпульсов.
-Полученные данные приведены на Fig.~\ref{image:Hamamatsu_S10362-11-100C_p_f_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_p_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_tau_s_vs_T},
+As a result of spectrum approximation we fond also probabilities and time constants for after-pulses.
+The obtained data are shown in Fig.~\ref{image:Hamamatsu_S10362-11-100C_p_f_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_p_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_tau_s_vs_T},
  \ref{image:Hamamatsu_S10362-11-100C_tau_s_vs_V}, \ref{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}, \ref{image:Hamamatsu_S13360-3050CS_tau_s_vs_V}, \ref{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus}, \ref{image:KETEK_PM1125NS_SB0_tau_f_vs_V_rus}.
 
 \begin{figure}[h]
@@ -496,11 +496,11 @@ On the other hand it was calculated the experimental probability $p_{2 phe}^{exp
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_p_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от температуры при фиксированном перенапряжении для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the temperature at fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_p_f_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the overvoltage at fixed temperature for 
 Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S10362-11-100C_p_f_vs_V}}
 \end{figure}
@@ -510,11 +510,11 @@ Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_p_s_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности медленной компоненты послеимпульса $p_{s}$ от температуры при фиксированном перенапряжении для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow component probability $p_{s}$ for after-pulse on the temperature at fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_p_s_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности медленной компоненты послеимпульса $p_{s}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow component probability $p_{s}$ for after-pulse on the overvoltage at fixed temperature for
 Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S10362-11-100C_p_s_vs_V}}
 \end{figure}
@@ -524,40 +524,41 @@ Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_tau_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость времени быстрой компоненты послеимпульса $\tau_{f}$ от температуры при фиксированном перенапряжении для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the temperature at fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость времени быстрой компоненты послеимпульса $\tau_{f}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the overvoltage at fixed temperature for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}}
 \end{figure}
 
+%\if 0
 \begin{figure}[h]
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_tau_s_vs_T_eng}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_tau_s_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость времени медленной компоненты послеимпульса $\tau_{s}$ от температуры при фиксированном перенапряжении для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow time constant $\tau_{s}$ for after-pulse on the temperature at fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_s_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость времени медленной компоненты послеимпульса $\tau_{s}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow time constant $\tau_{s}$ for after-pulse on the overvoltage at fixed temperature for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_s_vs_V}}
 \end{figure}
-
+%\fi
 
 \begin{figure}[h]
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S13360-3050CS_p_f_vs_V_eng}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S13360-3050CS_tau_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the overvoltage at fixed temperature for
 Hamamatsu S13360-3050CS. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость времени быстрой компоненты послеимпульса $\tau_{f}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the overvoltage at fixed temperature for
 Hamamatsu S13360-3050CS.}
 \label{image:Hamamatsu_S13360-3050CS_tau_s_vs_V}}
 \end{figure}
@@ -567,43 +568,49 @@ Hamamatsu S13360-3050CS.}
 \hfill
 \includegraphics[width=0.47\textwidth]{KETEK_PM1125NS_SB0_tau_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{Зависимость вероятности быстрой компоненты послеимпульса $p_{f}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the overvoltage at fixed temperature for
 KETEK PM1125NS-SB0. The data were approximated by a quadratic function.}
 \label{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{Зависимость времени быстрой компоненты послеимпульса $\tau_{f}$ от перенапряжения при фиксированной температуре для
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the overvoltage at fixed temperature for
 KETEK PM1125NS-SB0.}
 \label{image:KETEK_PM1125NS_SB0_tau_f_vs_V_rus}}
 \end{figure}
 
-Вероятности послеимпульсов $p_{s}$ и $p_{f}$ при текущей точности измерения не зависят от температуры.
-От перенапряжения вероятности послеимпульсов должны иметь квадратичную зависимость:
+The after-pulse probabilities $p_{s}$ and $p_{f}$ at the current accuracy of the measurement are independent of temperature.
+At the same time, this probabilities has to have a quadratic dependence on the overvoltage:
 \begin{eqnarray}\label{eq:p_f_s_vs_T_V}
 p_{i}(\Delta V, T) = k_{i}^{p} \cdot \Delta V^2
 \end{eqnarray}
 
-Времена послеимпульсов $\tau_{s}$ и $\tau_{f}$ при данной точности измерений не имеют зависимости от перенапряжения.
+The time constants $\tau_{s}$ and $\tau_{f}$ at a given measurement accuracy are independent on overvoltage.
 
 \section{Conclusions}
-В работе описан алгоритм измерения напряжения пробоя, темновых токов, вероятности кросстоков и послеимпульсов, времен послеимпульсов для трех типов SiPM :
-KETEK PM1125NS-SB0, Hamamatsu S10362-33-025C and Hamamatsu S13360-3050CS.
+In the work were described the algorithms for measurement the breakdown voltage, the dark noise, the probabilities for cross-talk and after-pulsing and after-pulsing time constants for three SiPMs types: KETEK PM1125NS-SB0, Hamamatsu S10362-33-025C and Hamamatsu S13360-3050CS.
 
-При достигнутой точности измерения в интервале температур от $0$ до $20 C^{\circ}$ вероятность кросстока, вероятность послеимпульса и время послеимпульса не зависят от температуры.
-Была проведена проверка SiPM на соответствие модели 4-х соседей. Все три типа SiPM имеют отличие от модели менее, чем на 10\%.
-Вероятность кросстока для Hamamatsu S10362-33-025C при рабочем перенапряжении (1 В) составляет около 12\%, для Hamamatsu S13360-3050CS и KETEK PM1125NS-SB0 (рабочее перенапряжение 4 В) состаляет около 6\%. Вероятность послеимпульса для Hamamatsu S10362-33-025C при рабочем перенапряжении составляет около 10\% (быстрая компонента) и 15\% (медленная компонента).
-Для Hamamatsu S13360-3050CS и KETEK PM1125NS-SB0 из-за небольшой статистики была изучена только быстрая компонента, которая составляет около 10\%.
-Время послеимпульса для Hamamatsu S10362-33-025C составляет около 35 нс (быстрая компонента) и 170 нс (медленная компонента), для Hamamatsu S13360-3050CS - 9 нс, для KETEK PM1125NS-SB0 - 28 нс.
-Частота темновых шумов для Hamamatsu S10362-33-025C при рабочем напряжении и температуре $20  \;  ^{\circ}C$ составляет $300  \;  кГц / мм^2$, для Hamamatsu S13360-3050CS - $30 \; кГц / мм^2$, для KETEK PM1125NS-SB0 - $80 \; кГц / мм^2$.
-
-Таким образом, на основании проделанных экспериментов, мы можем сделать вывод, что лучшим кандидатом для использования в счетных детекторах среди исследованных SiPM является Hamamatsu S13360-3050CS, который при прочих равных имеет меньшую частоту темновых токов и наименьшее время послеимпульса.
-
-Помимо использованного алгоритма нахождения кросстоков, существует еще три метода.
-Первый - измерение частоты появления импульсов в зависимости от порога по амплитуде.
+Offline signal processing was performed by the pulse approximation with reconstruction of the amplitudes and start time to find these parameters.
+Besides the algorithm used, there are three methods.
+The first - the measurement of the pulse rate depending on the amplitude threshold.
 Второй - интегрирование сигнала в определенном интервале времени и нахождение числа событий в пиках.
 Третий - обратная свертка сигнала и аппроксимация спектра временных интервалов.
 Первые два метода достаточно просты и могут использоваться в online анализе, однако они имеют серьезный недостаток -
 с их помощью нельзя найти вероятность и время послеимпульса.
 Третий метод и метод, использованный в данной работе требуют больших вычислительных мощностей, однако позволяют найти параметры послеимпульсов.
+
+At achieved measurement accuracy in the temperature range from $0$ to $20 C^{\circ}$ cross-talk probability, after-pulsing probability and after-pulsing time constant are independent on temperature.
+SiPMs were checked for compliance with the four neighbors model.
+All three types of SiPMs have model discrepancy less than 10\%.
+
+Cross-talk probability for Hamamatsu S10362-33-025C at an operating overvoltage (1 V) is about 12\%, for Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 (an operating overvoltage is 4 V) is about 6\%. After-pulsing probability for Hamamatsu S10362-33-025C at an operating overvoltage is about 10\% (fast component) и 15\% (slow component).
+For Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 because of the small statistics was studied only the fast component, which is about 10\%.
+After-pulsing time constants for Hamamatsu S10362-33-025C are about 35 ns (fast component) and 170 ns (slow component), for Hamamatsu S13360-3050CS - 9 ns, для KETEK PM1125NS-SB0 - 28 ns.
+Dark noise rate for Hamamatsu S10362-33-025C at an operating overvoltage and $20  \;  ^{\circ}C$ temperature is about $300  \;  kHz / mm^2$, for Hamamatsu S13360-3050CS - $30 \; kHz / mm^2$, for KETEK PM1125NS-SB0 - $80 \; kHz / mm^2$.
+
+
+
+Таким образом, на основании проделанных экспериментов, мы можем сделать вывод, что лучшим кандидатом для использования в счетных детекторах среди исследованных SiPM является Hamamatsu S13360-3050CS, который при прочих равных имеет меньшую частоту темновых токов и наименьшее время послеимпульса.
+
+
 
 
 

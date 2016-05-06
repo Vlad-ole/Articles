@@ -2,6 +2,7 @@
 \usepackage{russ}
 \usepackage{cmap}
 \usepackage{cite}
+\usepackage{comment}
 
 \usepackage[T2A]{fontenc}
 \usepackage[cp1251]{inputenc}
@@ -40,7 +41,7 @@
 
 \begin{document}
 
-\include{content_rus}
+%\include{content_rus}
 \include{content_eng}
 
 \include{bibliography}
