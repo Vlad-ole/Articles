@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
-A level-1 auxiliary file: content_eng.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: content_eng.aux
 White space in argument---line 2 of file content_eng.aux
  : \citation{SiPM
  :                based photon counting detector for scanning digital radiography}
@@ -52,7 +51,6 @@ White space in argument---line 68 of file content_eng.aux
  : \citation{Modeling
  :                    crosstalk in silicon photomultipliers}
 I'm skipping whatever remains of this command
-A level-1 auxiliary file: bibliography.aux
-I found no \bibdata command---while reading file main.aux
-I found no \bibstyle command---while reading file main.aux
+I found no \bibdata command---while reading file content_eng.aux
+I found no \bibstyle command---while reading file content_eng.aux
 (There were 15 error messages)

@@ -6,12 +6,11 @@ They exceed photomultipliers on quantum efficiency, size and resistance to the m
 However, due to the features of the structure they have a greater value of dark noise, as well as have additional sources of noise: cross-talk and after-pulsing.
 In addition, these parameters may have a temperature dependence.
 
-In this article one study dark noise, probabilities of cross-talk and after-pulsing at different voltages and temperatures for two modern SiPM: Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 and Hamamatsu S10362-11-100C SiPM from previous generation.
-An offline signal processing was performed by a pulse approximation with reconstruction of amplitudes
-and start times to find these parameters.
-As a result, we found that in achieved measurement accuracy dark noise has a temperature and voltage dependence, but cross-talk and after-pulsing probabilities have only the latter.
+In this article we study dark noise, probabilities of cross-talk and after-pulsing at different voltages and temperatures for two modern SiPM: Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 and Hamamatsu S10362-11-100C SiPM from the previous generation.
+An offline signal processing was performed by a pulse approximation with reconstruction of amplitudes and start times to find these parameters.
+As a result, we found that in achieved measurement accuracy dark noise has a temperature and a voltage dependence, but cross-talk and after-pulsing probabilities have only the latter.
 
-The measured cross-talk probabilities for KETEK PM1125NS-SB0 and Hamamatsu S13360-3050CS at their operating voltage is about 6\%
+Measured cross-talk probabilities for KETEK PM1125NS-SB0 and Hamamatsu S13360-3050CS at their operating voltage is about 6\%
 which is two times smaller than that for Hamamatsu S10362-11-100C.
 The total after-pulsing probability (fast component) for KETEK PM1125NS-SB0 and Hamamatsu S13360-3050CS is about 12\%, which is also almost 2 times smaller than that for Hamamatsu S10362-11-100C (fast and slow component).
 Dark noise rate for Hamamatsu S13360-3050CS at $ 20 \; ^{\circ}C $ is only $ 30 \; kHz / mm ^ 2 $ in comparison with $ 80 \; kHz / mm ^ 2 $ for KETEK PM1125NS-SB0.
@@ -45,7 +44,7 @@ The light source based on fast LED (CAEN SP5601) sends a flash through an optica
 At the same time, the light source sends a trigger signal to the CAEN DT5720A ADC.
 The signal from the SiPM passes through the amplifier to the CAEN DT5720A, which integrates the signal in the presence of the trigger signal.
 The resulting charge is transmitted to computer in on-line mode.
-SiPM is mounted on a thermoelectric cooler and the temperature stabilization is ensured by TRM 101 PID - controller.
+SiPM is mounted on a thermoelectric cooler and the temperature stabilization is ensured by the TRM 101 PID controller.
 The deviation from the set temperature does not exceed 1K.
 \begin{figure}[h]
 \center{\includegraphics[width=8cm]{install_V_bd_11}}
@@ -56,7 +55,7 @@ The deviation from the set temperature does not exceed 1K.
 The calculation of the breakdown voltage had several stages.
 The intensity of the light source was set so that there were not SiPM triggering or single photon was registered in generally.
 The signal was integrated into the gate with 200 ns duration ($\approx 5 \cdot \tau$).
-Then the tops of the noise peak and the peak from the registration of single photons waere approximated by a Gaussian function.
+Then the tops of the noise peak and the peak from the registration of single photons were approximated by a Gaussian function.
 We calculated the distance $\Delta$ between the 0th and the 1st peak.
 Distances between the first and the second, the second and the third etc. peaks were not considered.
 The main reason was that as the number of peak increased the greater became the discrepancy between the true and measured peak position because of after-pulses.
@@ -470,18 +469,18 @@ Based on the experimental data, it can be concluded that the cross-talk probabil
 
 \subsection{Checking the model of four nearest neighbors}
 It noted the existence of SiPM, which do not correspond to the model of four nearest neighbors \cite{Modeling crosstalk in silicon photomultipliers}.
-In the model of four nearest neighbors it is assumed that trigged cell can cause the triggering of only four nearest cells.
+In the model of four nearest neighbors it is assumed that a trigged cell can cause the triggering of only four nearest cells.
 In this case, the cross-talk probability in the next cell $p$ is related to the full cross-talk probability $P_{x-talk}$ by the following equation
 \begin{eqnarray}\label{eq:p vs xtalk}
 (1 - p)^4 = 1 - P_{X-talk}
 \end{eqnarray}
 
-Full cross-talk probability was calculated by the Eq.(\ref{eq:xtalk_general}).
-Then $p$ value was calculated by Eq.(\ref{eq:p vs xtalk}).
-It was calculated theoretical probability that due to cross-talk only one cell triggered \cite{Modeling crosstalk in silicon photomultipliers}: $p_{2 phe}^{theory} = 4 \cdot p \cdot (1 - p)^6$.
+The full cross-talk probability was calculated by the Eq.(\ref{eq:xtalk_general}).
+Then the $p$ value was calculated by Eq.(\ref{eq:p vs xtalk}).
+It was calculated the theoretical probability that due to cross-talk only one cell triggered \cite{Modeling crosstalk in silicon photomultipliers}: $p_{2 phe}^{theory} = 4 \cdot p \cdot (1 - p)^6$.
 On the other hand it was calculated the experimental probability $p_{2 phe}^{exp}$ as the ratio of events number $N_{2 p.e.}$ to the total number of events,
 where $N_{2 p.e.} \approx  N_{B_{1}} / (N_{A_{1}} + N_{B_{1}} + N_{C_{1}})$.
-As a result of measurements, it was found that the ratio $p_{2 phe}^{exp} / p_{2 phe}^{theory}$ for Hamamatsu S10362-11-100C varies from 1 to 1.08 depending on temperature and overvoltage, and for Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 this ratio varies from 0.98 to 1.02.
+As a result of measurements, it was found that the ratio $p_{2 phe}^{exp} / p_{2 phe}^{theory}$ for Hamamatsu S10362-11-100C varies from 1 to 1.08 depending on a temperature and an overvoltage, and for Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 this ratio varies from 0.98 to 1.02.
 Thus it can be concluded that the model of four nearest neighbors works well for considered SiPMs.
 
 \subsection{After-pulses}
@@ -495,11 +494,11 @@ The obtained data are shown in Fig.~\ref{image:Hamamatsu_S10362-11-100C_p_f_vs_T
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_p_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the temperature at fixed overvoltage for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for an after-pulse on a temperature at a fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_p_f_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for an after-pulse on an overvoltage at a fixed temperature for
 Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S10362-11-100C_p_f_vs_V}}
 \end{figure}
@@ -509,11 +508,11 @@ Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_p_s_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow component probability $p_{s}$ for after-pulse on the temperature at fixed overvoltage for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow component probability $p_{s}$ for an after-pulse on a temperature at a fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_p_s_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow component probability $p_{s}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow component probability $p_{s}$ for an after-pulse on an overvoltage at a fixed temperature for
 Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S10362-11-100C_p_s_vs_V}}
 \end{figure}
@@ -523,11 +522,11 @@ Hamamatsu S10362-11-100C. The data were approximated by a quadratic function.}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_tau_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the temperature at fixed overvoltage for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for an after-pulse on a temperature at a fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for an after-pulse on an overvoltage at a fixed temperature for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}}
 \end{figure}
@@ -538,11 +537,11 @@ Hamamatsu S10362-11-100C.}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_tau_s_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow time constant $\tau_{s}$ for after-pulse on the temperature at fixed overvoltage for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow time constant $\tau_{s}$ for an after-pulse on a temperature at a fixed overvoltage for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_s_vs_T}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow time constant $\tau_{s}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the slow time constant $\tau_{s}$ for an after-pulse on a overvoltage at a fixed temperature for
 Hamamatsu S10362-11-100C.}
 \label{image:Hamamatsu_S10362-11-100C_tau_s_vs_V}}
 \end{figure}
@@ -553,11 +552,11 @@ Hamamatsu S10362-11-100C.}
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S13360-3050CS_tau_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for an after-pulse on an overvoltage at a fixed temperature for
 Hamamatsu S13360-3050CS. The data were approximated by a quadratic function.}
 \label{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for an after-pulse on an overvoltage at a fixed temperature for
 Hamamatsu S13360-3050CS.}
 \label{image:Hamamatsu_S13360-3050CS_tau_s_vs_V}}
 \end{figure}
@@ -567,43 +566,43 @@ Hamamatsu S13360-3050CS.}
 \hfill
 \includegraphics[width=0.47\textwidth]{KETEK_PM1125NS_SB0_tau_f_vs_V_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast component probability $p_{f}$ for an after-pulse on an overvoltage at a fixed temperature for
 KETEK PM1125NS-SB0. The data were approximated by a quadratic function.}
 \label{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus}}
 \hfill
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for after-pulse on the overvoltage at fixed temperature for
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the fast time constant $\tau_{f}$ for an after-pulse on an overvoltage at a fixed temperature for
 KETEK PM1125NS-SB0.}
 \label{image:KETEK_PM1125NS_SB0_tau_f_vs_V_rus}}
 \end{figure}
 
-The after-pulse probabilities $p_{s}$ and $p_{f}$ at the current accuracy of the measurement are independent of temperature.
-At the same time, this probabilities has to have a quadratic dependence on the overvoltage:
+After-pulse probabilities $p_{s}$ and $p_{f}$ at the current accuracy of the measurement are independent of a temperature.
+At the same time, this probabilities have to have a quadratic dependence on an overvoltage:
 \begin{eqnarray}\label{eq:p_f_s_vs_T_V}
 p_{i}(\Delta V, T) = k_{i}^{p} \cdot \Delta V^2
 \end{eqnarray}
 
-The time constants $\tau_{s}$ and $\tau_{f}$ at a given measurement accuracy are independent on overvoltage.
+The time constants $\tau_{s}$ and $\tau_{f}$ at a given measurement accuracy are independent on an overvoltage.
 
 \section{Conclusions}
-In the work were described the algorithms for measurement the breakdown voltage, the dark noise, the probabilities for cross-talk and after-pulsing and after-pulsing time constants for three SiPMs types: KETEK PM1125NS-SB0, Hamamatsu S10362-11-100C and Hamamatsu S13360-3050CS.
+In the work were described the algorithms for measurement the breakdown voltage, dark noise, probabilities for cross-talk and after-pulsing and after-pulsing time constants for three SiPMs types: KETEK PM1125NS-SB0, Hamamatsu S10362-11-100C and Hamamatsu S13360-3050CS.
 
-Offline signal processing was performed by the pulse approximation with reconstruction of the amplitudes and start time to find these parameters.
+An offline signal processing was performed by the pulse approximation with reconstruction of amplitudes and start times to find these parameters.
 Besides the algorithm used, there are three methods.
 The first - the measurement of the pulse rate depending on the amplitude threshold.
 The second - the integration a signal at a certain time interval and finding a number of events in the peaks.
-The third -   signal deconvolution and an approximation the pulse interval spectrum.
-The first two methods are rather simple and can be used in online analysis
-but they have a serious drawback - after-pulsing probability and after-pulsing time constants can't be be found.
-The third method, and the method used in this study require large computing power, however, allow us to find after-pulses parameters.
+The third -  the signal deconvolution and an approximation of the pulse interval spectrum.
+The first two methods are rather simple and can be used in an online analysis
+but they have a serious drawback - after-pulsing probabilities and after-pulsing time constants can't be found.
+The third method, and the method used in this study require large computing power, however, allow us to find after-pulsing parameters.
 
-At achieved measurement accuracy in the temperature range from $0$ to $20 C^{\circ}$ cross-talk probability, after-pulsing probability and after-pulsing time constant are independent on temperature.
+At achieved measurement accuracy in the temperature range from $0$ to $20 C^{\circ}$ the cross-talk probability, after-pulsing probabilities and after-pulsing time constants are independent on a temperature.
 SiPMs were checked for compliance with the four neighbors model.
 All three types of SiPMs have model discrepancy less than 10\%.
 
-Cross-talk probability for Hamamatsu S10362-11-100C at an operating overvoltage (1 V) is about 12\%, for Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 (an operating overvoltage is 4 V) is about 6\%. After-pulsing probability for Hamamatsu S10362-11-100C at an operating overvoltage is about 10\% (fast component) и 15\% (slow component).
-For Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 because of the small statistics was studied only the fast component, which is about 10\%.
-After-pulsing time constants for Hamamatsu S10362-11-100C are about 35 ns (fast component) and 170 ns (slow component), for Hamamatsu S13360-3050CS - 9 ns, для KETEK PM1125NS-SB0 - 28 ns.
+The cross-talk probability for Hamamatsu S10362-11-100C at an operating overvoltage (1 V) is about 12\%, for Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 (an operating overvoltage is 4 V) is about 6\%. After-pulsing probabilities for Hamamatsu S10362-11-100C at an operating overvoltage is about 10\% (fast component) и 15\% (slow component).
+For Hamamatsu S13360-3050CS and KETEK PM1125NS-SB0 because of the small statistics it was studied only the fast component, which is about 10\%.
+After-pulsing time constants for Hamamatsu S10362-11-100C are about 35 ns (fast component) and 170 ns (slow component), for Hamamatsu S13360-3050CS - 9 ns, for KETEK PM1125NS-SB0 - 28 ns.
 Dark noise rate for Hamamatsu S10362-11-100C at an operating overvoltage and $20  \;  ^{\circ}C$ temperature is about $300  \;  kHz / mm^2$, for Hamamatsu S13360-3050CS - $30 \; kHz / mm^2$, for KETEK PM1125NS-SB0 - $80 \; kHz / mm^2$.
 
-Thus, on the basis of the experiments we can conclude that the best candidate for use in counting detectors among the studied SiPMs is Hamamatsu S13360-3050CS which ceteris paribus has a lower dark noise rate and the least after-pulsing time constants.
+Thus, on the basis of the experiments we can conclude that the best candidate for use in counting detectors among the studied SiPMs is Hamamatsu S13360-3050CS which has lower dark noise rate and the least after-pulsing time constants.
 
