@@ -182,7 +182,7 @@ The amplitude threshold $th_{amp}^{stop}$ was chosen as the intersection of the 
 To determine $th_{amp}^{start}$ a dependence of events number versus the threshold voltage at different values of the dead time $\tau_{amp}^{dead}$ was measured.
 The examples of dependencies are shown in Fig.~\ref{image:Hamamatsu_S10362-11-100C_295K_1OV_amp_th} for Hamamatsu S10362-11-100C at $T = 295K$ and $\Delta V = 1 V$.
 The thresholds were practically independent of the selected dead time $\tau_{amp}^{dead}$.
-The threshold for a triggering by amplitude $th_{amp}^{start}$ was chosen at 1/2 amplitude of the single-electron signal (approximately $20V$).
+The threshold for a triggering by amplitude $th_{amp}^{start}$ was chosen at 1/2 amplitude of the single-electron signal (approximately $20 mV$).
 
 
 A similar graph can be drawn for the derivative (Fig.~\ref{image:Hamamatsu_S10362-11-100C_295K_1OV_der_th}).
@@ -196,7 +196,7 @@ Thresholds $th_{der}$ and $th_{amp}^{start}$ should be recalculated for other ov
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_295K_1OV_der_th_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of the number of found signals versus amplitude threshold and the dead time $\tau_{amp}^{dead}$ 
+\parbox[t]{0.47\textwidth}{\caption{The dependence of the number of found signals versus amplitude threshold and the dead time $\tau_{amp}^{dead}$
 (Hamamatsu S10362-11-100C at 1V overvoltage and 295K}
 \label{image:Hamamatsu_S10362-11-100C_295K_1OV_amp_th}}
 \hfill
@@ -212,7 +212,7 @@ At each part had to either one pulse or superposition of pulses.
 To find parameters $A_{i}$ and $t_{i}$ each fragment of waveform should be approximated with Eq.(\ref{eq:parsing}).
 This function internally nonlinear on $t_{i}$ parameter therefore to get correct approximation it is necessary to set the initial value of parameter $t_{i}$ close to the ones.
 To do this, we define $t_{i}^{initial}$ as the time when the 1st derivative reaches the maximum on the interval from the moment when the signal exceed the threshold $th_{der}$ to this moment plus 5 ns:
-$t_{i}^{initial} = argmax( f^{\prime}(t) )$. 
+$t_{i}^{initial} = argmax( f^{\prime}(t) )$.
 
 
 Further, an each independent fragment was approximated by Eq.(\ref{eq:parsing}) at $N = 1$.
@@ -231,7 +231,7 @@ In Fig.~\ref{image:Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2} a correlat
 \hfill
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_295K_1_OV_Chi2_amp1_amp2_eng}
 \\
-\parbox[t]{0.47\textwidth}{\caption{The dependence of $\chi^2 / Dof$ from the total amplitude $amp_{1} + amp_{2}$ when approximating all pulses by one-component function 
+\parbox[t]{0.47\textwidth}{\caption{The dependence of $\chi^2 / Dof$ from the total amplitude $amp_{1} + amp_{2}$ when approximating all pulses by one-component function
 (Hamamatsu S10362-11-100C at 1V overvoltage and 295K).}
 \label{image:Hamamatsu_S10362-11-100C_295K_1V_Chi2_amp 1}}
 \hfill
@@ -282,7 +282,7 @@ The main reason for this is that the after-pulse occurs with the pulse interval 
 For the correct approximation we took into account only intervals that exceed a certain minimal value.
 Selection of the minimal interval effect on  a value of component $\tau_{f}$ as could be seen in Fig.~\ref{image:Hamamatsu_S10362-11-100C 295K_1_OV_dt_spectrum_timecut}.
 For this type of SiMP at 295K temperature and 1V overvoltage 25 ns threshold was chosen.
-Further with reducing the overvoltage the pulse interval threshold increases.
+Further with a reducing the overvoltage the pulse interval threshold increases.
 
 \begin{figure}[h]
 \includegraphics[width=0.47\textwidth]{Hamamatsu_S10362-11-100C_295K_1_OV_dt_spectrum}
@@ -307,7 +307,7 @@ This dependence is expressed by the following equation \cite{Characterization of
 \end{eqnarray}
 where $A$ is a constant, depending on voltage and technology, T is an absolute temperature, $E_g$ is a bandgap, $k_B$ is the Boltzmann constant.
 
-In Fig.\ref{image:Hamamatsu_S10362-11-100C_dc_vs_V}, \ref{image:KETEK_PM1125NS_SB0_dc_vs_V_rus} 
+In Fig.\ref{image:Hamamatsu_S10362-11-100C_dc_vs_V}, \ref{image:KETEK_PM1125NS_SB0_dc_vs_V_rus}
 the dependencies of dark noise rate on an overvoltage are presented.
 This dependence was approximated with linear law.
 
@@ -410,7 +410,7 @@ Thus it can be concluded that the model of four nearest neighbors works well for
 
 In Fig.\ref{image:Hamamatsu_S10362-11-100C_p_f_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_T}, the dependencies of the probabilities for after-pulses versus temperature are presented.
 This dependencies $p_{s}$ and $p_{f}$ at the current accuracy of the measurements are independent of a temperature.
-In Fig.\ref{image:Hamamatsu_S10362-11-100C_p_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_V}, \ref{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}, \ref{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus} 
+In Fig.\ref{image:Hamamatsu_S10362-11-100C_p_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_p_s_vs_V}, \ref{image:Hamamatsu_S13360-3050CS_p_f_vs_V_rus}, \ref{image:KETEK_PM1125NS_SB0_p_f_vs_V_rus}
 the dependencies of the probabilities for after-pulses versus overvoltage are presented.
 This dependencies were approximated with quadratic dependence on an overvoltage.
 In Fig.\ref{image:Hamamatsu_S10362-11-100C_tau_f_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_tau_f_vs_V}, \ref{image:Hamamatsu_S10362-11-100C_tau_s_vs_T}, \ref{image:Hamamatsu_S10362-11-100C_tau_s_vs_V}
