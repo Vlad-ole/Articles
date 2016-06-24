@@ -1,8 +1,8 @@
 \documentclass[12pt,a4paper, onecolumn]{article}
-\usepackage{russ}
+%\usepackage{russ}
 \usepackage{cmap}
 \usepackage{cite}
-\usepackage{comment}
+%\usepackage{comment}
 
 \usepackage[T2A]{fontenc}
 \usepackage[cp1251]{inputenc}
